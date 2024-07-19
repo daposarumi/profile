@@ -1,0 +1,304 @@
+/* Existing CSS */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#home div {
+    padding: 80px 40px;
+    background-color: beige;
+}
+
+h1 {
+    font-size: 80px;
+    color: rgb(62, 62, 62);
+    line-height: 1.2;
+}
+.hero-text h1{
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+nav a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    margin-right: 200px;
+    margin-top: 4px;
+}
+
+.logo {
+    margin-left: 80px;
+}
+
+.logo h2 a{
+    color: rgb(170, 144, 1);
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-img img {
+    max-width: 100%;
+    border-radius: 15px;
+    width: 250px;
+    border: 2px solid rgb(49, 49, 49);
+    border-style: groove;
+}
+.project-card img {
+    border: solid black 0.8px;
+}
+
+#about {
+    padding: 70px 80px;
+}
+
+.about {
+    text-align: center;
+    margin: 0 auto;
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+.panache {
+    text-align: left;
+}
+
+.about p {
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#contact {
+    padding: 40px 80px;
+    text-align: center;
+    background-color: rgb(246, 246, 235);
+    margin: 0 50px;
+}
+
+.contact {
+    margin: 20px;
+}
+
+.contact p {
+    margin-top: 20px;
+}
+
+#skills {
+    padding: 70px 80px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.skill-category h4{
+    margin-bottom: 20px;
+}
+
+/* New CSS for CV section */
+#cv {
+    padding: 70px 80px;
+    background-color: #f4f4f4;
+}
+
+.cv {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cv-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cv-section li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.cv-section li strong {
+    font-weight: bold;
+}
+
+/* New CSS for Projects section */
+#projects {
+    padding: 90px 80px;
+    background-color: #e2e4d8;
+}
+
+.projects {
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    padding: 60px 37px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.project-card img:hover{
+    cursor: hover;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .menu {
+        margin-right: 100px;
+    }
+    .project-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        margin-right: 0;
+    }
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-category {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    #home div {
+        padding: 40px 20px;
+    }
+    .project-card {
+        width: 100%;
+    }
+    #contact {
+        padding: 20px 40px;
+        margin: 0 20px;
+    }
+    #skills {
+        padding: 40px 20px;
+    }
+    #about, #cv, #projects {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .hero-text, .hero img {
+        width: 100%;
+    }
+    .skill-category {
+        flex-direction: column;
+    }
+    #contact {
+        padding: 20px 20px;
+        margin: 0 10px;
+    }
+    #skills, #about, #cv, #projects {
+        padding: 20px 10px;
+    }
+    .project-card {
+        padding: 15px;
+    }
+}
